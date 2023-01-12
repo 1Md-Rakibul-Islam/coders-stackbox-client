@@ -1,13 +1,14 @@
-import React from 'react';
-import Button from '../../../components/Buttons/NormalButton';
+import React from "react";
+import Button from "../../../components/Buttons/NormalButton";
 
 const Hero = () => {
-    return (
-        <div >
-            <h1 className="" >Hero</h1>
-            <Button>Let Go!</Button>
-        </div>
-    );
+  return (
+    <div>
+      <h1 className="">Hero</h1>
+
+      <Button>Let Go!</Button>
+    </div>
+  );
 };
 
 export default Hero;
