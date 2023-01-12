@@ -1,11 +1,11 @@
 import React from 'react';
-import NormalButton from '../../../components/Buttons/NormalButton';
+import Button from '../../../components/Buttons/NormalButton';
 
 const Hero = () => {
     return (
         <div >
             <h1 className="" >Hero</h1>
-            <NormalButton>Let Go!</NormalButton>
+            <Button>Let Go!</Button>
         </div>
     );
 };
