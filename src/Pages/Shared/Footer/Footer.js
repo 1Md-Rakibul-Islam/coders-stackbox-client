@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         
             <footer className="footer p-10 text-white relative">
-            
+            <div className="footer-gradient" />
                 <div>
                     <span className="footer-title text-secondary">Services</span>
                     <ul>
