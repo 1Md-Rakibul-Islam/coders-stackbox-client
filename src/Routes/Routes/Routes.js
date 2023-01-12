@@ -12,6 +12,10 @@ const router = createBrowserRouter([
                 element: <Home></Home>
             }
         ]
+    },
+    {
+        path:'*',
+        element: <div>Page is not available</div>
     }
 ]);
 
