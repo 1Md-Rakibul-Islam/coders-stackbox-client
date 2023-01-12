@@ -19,7 +19,7 @@ const ContactUs = () => {
       <section className="py-6 bg--400 dark:text-gray-50">
         <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
           <div className="py-6 md:py-0 md:px-6">
-            <h1 className="text-4xl font-bold text-white">Get in touch</h1>
+            <h1 className="text-3xl font-bold text-white">Get in touch</h1>
             <p className="pt-2 pb-4 text-white">
               Fill in the form to start a conversation
             </p>
