@@ -1,38 +1,30 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div>
-            <footer className="footer p-10 bg-base-200 text-base-content">
-                <div>
+        <footer className='w-full flex text-center '>
+
+            <div className=''>
+                <ul className=' items-center m-8 text-xl'>
                     <span className="footer-title">Services</span>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/about'>About Us</Link></li>
+                    <li><Link to='/documentation'>Documentation</Link></li>
+                    <li><Link to='/community'>Community Support</Link></li>
+                    <li><Link to='/login'>Login</Link></li>
+                    <li><Link to="/signup">Sign Up</Link></li>
+                </ul>
+            </div>
+            <div className=''>
+                <span className="footer-title text-xl">Social</span>
+                <div className='grid sm:grid-cols-1 '>
+                    <a className="mr-5" href=""><ion-icon name="logo-github"></ion-icon></a>
+                    <a className="mr-5" href=""><ion-icon name="logo-stackoverflow"></ion-icon></a>
+                    <a className="mr-5" href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
                 </div>
-                <div>
-                    <span className="footer-title">Company</span>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
-                </div>
-                
-                <div>
-                    <span className="footer-title">Newsletter</span>
-                    <div className="form-control w-80">
-                        <label className="label">
-                            <span className="label-text">Enter your email address</span>
-                        </label>
-                        <div className="relative">
-                            <input type="text" placeholder="username@site.com" className="input input-bordered w-full pr-16" />
-                            <button className="btn btn-outline absolute top-0 right-0 rounded-l-none">Sign Up</button>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
     );
 };
 
