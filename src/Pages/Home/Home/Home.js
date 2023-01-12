@@ -7,12 +7,20 @@ import Services from "../Services/Services";
 
 const Home = () => {
   return (
-    <div>
-      <Hero></Hero>
-      <Services></Services>
-      <BestDeveloper></BestDeveloper>
-      <OurTeam></OurTeam>
-      <ContactUs></ContactUs>
+    <div className="overflow-hidden">
+      <Hero />
+      <div className="relative">
+        <Services />
+
+        <div className="gradient-03 z-0" />
+        <BestDeveloper />
+      </div>
+      <div className="relative">
+        <OurTeam />
+
+        <div className="gradient-04 z-0" />
+        <ContactUs />
+      </div>
     </div>
   );
 };
