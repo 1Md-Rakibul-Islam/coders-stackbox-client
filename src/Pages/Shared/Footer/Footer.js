@@ -8,12 +8,12 @@ const Footer = () => {
                 <div>
                     <span className="footer-title">Services</span>
                     <ul>
-                    <li><Link to='/'>Home</Link></li>
-                        <li><Link to='/about'>About Us</Link></li>
-                        <li><Link to='/documentation'>Documentation</Link></li>
-                        <li><Link to='/community'>Community Support</Link></li>
-                        <li><Link to='/login'>Login</Link></li>
-                        <li><Link to="/signup">Sign Up</Link></li>
+                    <li><Link to=''>Home</Link></li>
+                        <li><Link to=''>About Us</Link></li>
+                        <li><Link to=''>Documentation</Link></li>
+                        <li><Link to=''>Community Support</Link></li>
+                        <li><Link to=''>Login</Link></li>
+                        <li><Link to="">Sign Up</Link></li>
                     </ul>
                 </div>
                 <div>

@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     },
     {
         path:'*',
-        element: <div>Page is not available</div>
+        element: <div className="texl-3xl text-center">Page is not available</div>
     }
 ]);
 
