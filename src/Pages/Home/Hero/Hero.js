@@ -1,11 +1,11 @@
 import React from 'react';
-import Button3d from '../../../components/Buttons/Button3d';
+import Button from '../../../components/Buttons/NormalButton';
 
 const Hero = () => {
     return (
         <div >
             <h1 className="" >Hero</h1>
-            <Button3d><span>Click!</span><span>Let's Coding</span></Button3d>
+            <Button>Let Go!</Button>
         </div>
     );
 };
