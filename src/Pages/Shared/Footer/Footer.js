@@ -1,11 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styles from '../../../style';
 
 const Footer = () => {
     return (
         
-            <footer className="footer p-10 text-white relative overflow-hidden">
+            <footer className={`${styles.boxWidth} mx-auto footer p-10 text-white relative flex justify-between `}>
             <div className="footer-gradient" />
                 <div>
                     <span className="footer-title text-secondary">Services</span>

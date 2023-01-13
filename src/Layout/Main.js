@@ -8,16 +8,12 @@ const Main = () => {
   return (
     <div>
       <Navbar />
-      <div className={` ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
-        </div>
-      </div>
       <div className={` ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Outlet />
-          <Footer />
         </div>
       </div>
+          <Footer />
     </div>
   );
 };
