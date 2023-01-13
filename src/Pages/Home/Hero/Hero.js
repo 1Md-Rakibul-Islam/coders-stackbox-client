@@ -4,6 +4,7 @@ import heroImage from "../../../assets/heroImage.gif";
 import Button from "../../../components/Buttons/Button";
 
 const Hero = () => {
+
   return (
     <header className="my-10 ">
       <div className="grid md:grid-cols-2 grid-cols-1 md:mt-24 text-white gap-10 mx-5 items-center justify-center ">
@@ -16,10 +17,9 @@ const Hero = () => {
         <div className="overflow">
           <img className="w-full shadow-green-500 shadow-2xl rounded-xl" src={heroImage} alt="" />
         </div>
-      </div>
-
-    </header>
-  );
+        </div>
+        </header>
+    );
 };
 
 export default Hero;

@@ -1,5 +1,6 @@
 import React from "react";
 import BestDeveloper from "../BestDeveloper/BestDeveloper";
+import Collaboration from "../Collaboration/Collaboration";
 import ContactUs from "../ConactUs/ContactUs";
 import Hero from "../Hero/Hero";
 import OurTeam from "../OurTeam/OurTeam";
@@ -16,11 +17,11 @@ const Home = () => {
         <BestDeveloper />
       </div>
       <div className="relative">
-        <OurTeam />
-
+        <Collaboration />
         <div className="gradient-04 z-0" />
-        <ContactUs />
+        <OurTeam />
       </div>
+      <ContactUs />
     </div>
   );
 };
