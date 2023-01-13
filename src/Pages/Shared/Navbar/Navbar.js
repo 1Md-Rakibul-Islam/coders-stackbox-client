@@ -33,7 +33,7 @@ const Navbar = () => {
                     </span>
                     <h1 className='text-white'>Coders<span className='text-secondary'>StackBox</span></h1>
                 </div>
-                <div onClick={() =>setOpen(!open)} className='text-3xl absolute right-8 top-6
+                <div onClick={() =>setOpen(!open)} className='text-3xl text-white absolute right-8 top-6
                 cursor-pointer md:hidden block
                 '>
                 <ion-icon name={open ? 'close':'menu'}></ion-icon>
