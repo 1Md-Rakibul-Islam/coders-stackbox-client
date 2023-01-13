@@ -8,6 +8,11 @@
 body {
   margin: 0;
   background-color:#001419;
+  /* background-image: url("/src/assets/bg.svg");
+  background-size: cover; */
+  
+ 
+  background-size: cover;
 }
 
 
