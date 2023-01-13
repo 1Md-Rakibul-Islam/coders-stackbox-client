@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="">
           <h1 className="text-4xl font-bold">Coders StackBox is the best <br /> place to build, test, and discover <br /> front-end code.</h1>
           <p className="my-10">Build your Fron-End Web Application. Get work done quicker by building out <br /> entire projects or isolating code to test features and animations. Want to keep it all <br /> under wraps?
-          <br /> Become a part of the most active front-end community in the world by sharing work. Presenting at a conference? Show your code directly in the browser with Presentation Mode.</p>
+          <br /> <br /> Become a part of the most active front-end community in the world by sharing work. Presenting at a conference? Show your code directly in the browser with Presentation Mode.</p>
           <Button>Start Coding</Button>
 
         </div>
@@ -20,5 +20,4 @@ const Hero = () => {
     </header>
   );
 };
-
 export default Hero;
