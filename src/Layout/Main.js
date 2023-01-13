@@ -7,9 +7,9 @@ import styles from "../style";
 const Main = () => {
   return (
     <div>
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+      <Navbar />
+      <div className={` ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
-          <Navbar />
         </div>
       </div>
       <div className={` ${styles.paddingX} ${styles.flexCenter}`}>
