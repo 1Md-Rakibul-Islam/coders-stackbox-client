@@ -13,6 +13,10 @@ const router = createBrowserRouter([
                 element: <Home></Home>
             }
         ]
+    },
+    {
+        path:'*',
+        element: <div className="texl-3xl text-center">Page is not available</div>
     }
 ]);
 
