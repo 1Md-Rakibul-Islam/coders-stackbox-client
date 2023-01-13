@@ -23,8 +23,9 @@ const Navbar = () => {
   }, []);
 
     return (
-        <div className={`${styles.paddingX} shadow-md w-full z-10 top-0 left-0 ${fix ? "fixed top-0 z-10 backdrop-blur-2xl backdrop-opacity-30 transition-all duration-300 ease-in-out" : "relative"} `} >
+        <div className={`shadow-md w-full z-10 top-0 left-0 ${fix ? "fixed top-0 z-10 backdrop-blur-2xl backdrop-opacity-30 transition-all duration-300 ease-in-out" : "relative"} `} >
           <div className="absolute w-[50% inset-0 gradient-01" />
+            <div className={`${styles.boxWidth} mx-auto`}>
             <div className="flex justify-between py-4 ">
                 <div className='font-bold text-2xl cursor-pointer flex items-center font-[poppins] text-gray-800'>
                     <span className='text-3xl text-secondary mr-1 pt-2'>
@@ -48,6 +49,7 @@ const Navbar = () => {
                         <li><Link className="ml-8" to='/login'>Login</Link></li>
                         <li><Link className="ml-8" to="/signup">Sign Up</Link></li>
                     </ul>
+            </div>
             </div>
 
         </div>
