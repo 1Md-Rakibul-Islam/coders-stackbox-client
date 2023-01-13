@@ -22,7 +22,7 @@ const Navbar = () => {
   }, []);
 
     return (
-        <div className={`shadow-md w-full z-10 top-0 left-0 ${fix ? "fixed top-0 z-10 backdrop-blur-2xl backdrop-opacity-30 transition-all duration-300 ease-in-out" : ""}`} >
+        <div className={`shadow-md w-full z-10 top-0 left-0 ${fix ? "fixed top-0 z-10 backdrop-blur-ss backdrop-opacity-80 transition-all duration-300 ease-in-out" : ""}`} >
             <div className="md:flex justify-between py-4 md:px-10 px-7">
                 <div className='font-bold text-2xl cursor-pointer flex items-center font-[poppins] text-gray-800'>
                     <span className='text-3xl text-secondary mr-1 pt-2'>
@@ -30,7 +30,7 @@ const Navbar = () => {
                     </span>
                     <h1 className='text-white'>Coders<span className='text-secondary'>StackBox</span></h1>
                 </div>
-                <div onClick={() =>setOpen(!open)} className='text-3xl absolute right-8 top-6
+                <div onClick={() =>setOpen(!open)} className='text-3xl text-white absolute right-8 top-6
                 cursor-pointer md:hidden block
                 '>
                 <ion-icon name={open ? 'close':'menu'}></ion-icon>
