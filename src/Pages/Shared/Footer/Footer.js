@@ -1,10 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styles from '../../../style';
+import React from "react";
+import { Link } from "react-router-dom";
+import styles from "../../../style";
 
 const Footer = () => {
+
     return (
 
         <footer className={`${styles.boxWidth} mx-auto relative text-center `}>
@@ -39,6 +40,6 @@ const Footer = () => {
         </footer>
 
     );
-};
 
+}
 export default Footer;
