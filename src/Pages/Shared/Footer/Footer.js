@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         
-            <footer className="footer p-10 text-white relative">
+            <footer className="footer p-10 text-white relative overflow-hidden">
             <div className="footer-gradient" />
                 <div>
                     <span className="footer-title text-secondary">Services</span>
