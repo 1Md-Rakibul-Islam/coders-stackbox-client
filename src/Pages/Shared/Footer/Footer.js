@@ -2,12 +2,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styles from '../../../style';
 
 const Footer = () => {
     return (
         
-            <footer className="text-center p-10 bg-local ...">
-            
+            <footer className={`${styles.boxWidth} mx-auto footer p-10 text-white relative flex justify-between `}>
+            <div className="footer-gradient" />
                 <div>
                     
                     <ul className='lg:flex md:flex sm:flex items-center mt-10 text-bold justify-around text-white'>
