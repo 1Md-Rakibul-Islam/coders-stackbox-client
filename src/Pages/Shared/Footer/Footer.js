@@ -5,8 +5,10 @@ import { Link } from "react-router-dom";
 import styles from "../../../style";
 
 const Footer = () => {
-  return (
-    <footer
+
+    return (
+
+        <footer
       className={`${styles.boxWidth} mx-auto  py-10 text-white relative flex justify-center `}
     >
       <div className="footer-gradient" />
@@ -65,7 +67,8 @@ const Footer = () => {
           </div>
       </div>
     </footer>
-  );
-};
 
+    );
+
+}
 export default Footer;
