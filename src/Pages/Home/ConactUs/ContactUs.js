@@ -15,7 +15,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="border-2 border-secondary my-6 ">
+    <div className="ring-2 border-gradient-to-r from-accent to-secondary my-6">
       <section className="py-6 bg--400 dark:text-gray-50">
         <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
           <div className="py-6 md:py-0 md:px-6">
