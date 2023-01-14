@@ -14,7 +14,7 @@ export const collabs = [
   },
   {
     icon: <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M76.125 43.5H43.625V69.0357H69.1607L76.125 76V43.5Z" fill="#151515" stroke="white" stroke-width="4" stroke-linecap="round"></path><g filter="url(#filter0_d_15_197)"><path d="M24.875 26H67.375V59.3929H33.9821L24.875 68.5V26Z" fill="#151515"></path><path d="M24.875 26H67.375V59.3929H33.9821L24.875 68.5V26Z" stroke="white" stroke-width="4" stroke-linecap="round"></path></g><defs><filter id="filter0_d_15_197" x="4.875" y="6" width="86.5" height="89.3284" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dx="2" dy="2"></feOffset><feGaussianBlur stdDeviation="10"></feGaussianBlur><feComposite in2="hardAlpha" operator="out"></feComposite><feColorMatrix type="matrix" values="0 0 0 0 0.0823529 0 0 0 0 0.0823529 0 0 0 0 0.0823529 0 0 0 1 0"></feColorMatrix><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15_197"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15_197" result="shape"></feBlend></filter></defs></svg>,
-    title: "Better feedback",
+    title: "Better feedbacks",
     details: "Give and get feedback, on code or visuals, right in the editor. Take action and move forward faster."
   },
 ]
