@@ -1,9 +1,10 @@
 import React from "react";
+import FAQ from "./subsections/FAQ/FAQ";
 
 const CommunitySupport = () => {
   return (
     <div>
-      <h2 className="text-5xl text-white font-bold">Coming soon...</h2>
+      <FAQ></FAQ>
     </div>
   );
 };

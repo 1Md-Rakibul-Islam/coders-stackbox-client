@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../context/AuthProvider';
 import styles from '../../../style';
 
 const Navbar = () => {
+  const {user, logOut} = useContext(AuthContext);
+
+  const handleLogOut = () =>{
+    logOut()
+    .then(() => {})
+    .catch(error => console.log(error))
+  }
 
     let [open, setOpen] =useState(false);
 
@@ -46,8 +54,16 @@ const Navbar = () => {
                         <li><Link className="lg:ml-8 ml-0" to='/about'>About Us</Link></li>
                         <li><Link className="lg:ml-8 ml-0" to='/documentation'>Documentation</Link></li>
                         <li><Link className="lg:ml-8 ml-0" to='/community'>Community Support</Link></li>
-                        <li><Link className="lg:ml-8 ml-0" to='/login'>Login</Link></li>
-                        <li><Link className="lg:ml-8 ml-0" to="/signup">Sign Up</Link></li>
+                        <li className="lg:ml-8 ml-0">
+                          {
+                            user?.uid ? 
+                            <li><button onClick={handleLogOut}>Log Out</button></li>
+                            :
+                            <li>
+                            <Link to="/login">Login</Link>
+                            </li>
+                          }
+                        </li>
                     </ul>
             </div>
             </div>
