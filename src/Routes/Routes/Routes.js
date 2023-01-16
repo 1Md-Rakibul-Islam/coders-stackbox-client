@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layout/Main";
 import CommunitySupport from "../../Pages/CommunitySupport/CommunitySupport";
+import Documentation from "../../Pages/Documentation/Documentation";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
 import SingUp from "../../Pages/SignUp/SignUp";
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/community",
         element: <CommunitySupport></CommunitySupport>,
+      },
+      {
+        path: "/documentation",
+        element: <Documentation></Documentation>,
       },
       {
         path: "login", 

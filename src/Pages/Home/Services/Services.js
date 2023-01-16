@@ -9,7 +9,7 @@ const Services = () => {
                 <h1 className={`${styles.heading2} `}>Our Services</h1>
                 <p className={`${styles.paragraph} `}>Codestack is a platform that allows you to build, run, and share code in three different programming languages HTMl, CSS and JAVASCRIPT.</p>
             </div>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 md:grid-cols-2 mt-10'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 md:grid-cols-2 mt-10 z-10'>
                 <div className=' border border-lime-500 rounded-md mt-10'>
                     <div className="card-body">
                         <img className="h-16 w-16 bg-emerald-100 rounded-md -mt-16" src="https://i.ibb.co/jHqX7ZS/app-development.png" alt="" />
