@@ -27,7 +27,7 @@ export const bestDevs = [
     details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam necessitatibus delectus ducimus molestiae ipsam vel doloribus minus, suscipit aspernatur dolorum modi beatae at repellendus expedita eveniet. Laborum aliquam inventore aut.",
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam necessitatibus delectus ducimus molestiae ipsam vel doloribus minus",
     title: "Software Engineer"
-    
+
   },
   {
     id: "2",
@@ -36,7 +36,7 @@ export const bestDevs = [
     details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam necessitatibus delectus ducimus molestiae ipsam vel doloribus minus, suscipit aspernatur dolorum modi beatae at repellendus expedita eveniet. Laborum aliquam inventore aut.",
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam necessitatibus delectus ducimus molestiae ipsam vel doloribus minus",
     title: "Software Engineer"
-    
+
   },
   {
     id: "3",
@@ -45,7 +45,7 @@ export const bestDevs = [
     details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam necessitatibus delectus ducimus molestiae ipsam vel doloribus minus, suscipit aspernatur dolorum modi beatae at repellendus expedita eveniet. Laborum aliquam inventore aut.",
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam necessitatibus delectus ducimus molestiae ipsam vel doloribus minus",
     title: "Software Engineer"
-    
+
   },
   {
     id: "4",
@@ -54,7 +54,7 @@ export const bestDevs = [
     details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam necessitatibus delectus ducimus molestiae ipsam vel doloribus minus, suscipit aspernatur dolorum modi beatae at repellendus expedita eveniet. Laborum aliquam inventore aut.",
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam necessitatibus delectus ducimus molestiae ipsam vel doloribus minus",
     title: "Software Engineer"
-    
+
   },
   {
     id: "5",
@@ -63,7 +63,7 @@ export const bestDevs = [
     details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam necessitatibus delectus ducimus molestiae ipsam vel doloribus minus, suscipit aspernatur dolorum modi beatae at repellendus expedita eveniet. Laborum aliquam inventore aut.",
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam necessitatibus delectus ducimus molestiae ipsam vel doloribus minus",
     title: "Software Engineer"
-    
+
   },
   {
     id: "6",
@@ -72,6 +72,6 @@ export const bestDevs = [
     details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam necessitatibus delectus ducimus molestiae ipsam vel doloribus minus, suscipit aspernatur dolorum modi beatae at repellendus expedita eveniet. Laborum aliquam inventore aut.",
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam necessitatibus delectus ducimus molestiae ipsam vel doloribus minus",
     title: "Software Engineer"
-    
+
   },
 ];
