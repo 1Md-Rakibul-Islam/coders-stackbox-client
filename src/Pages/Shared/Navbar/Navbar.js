@@ -3,6 +3,12 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "../../../style";
+import React, { useContext } from "react";
+import { useEffect } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../../../context/AuthProvider";
+import styles from "../../../style";
 
 const Navbar = () => {
   let [open, setOpen] = useState(false);
