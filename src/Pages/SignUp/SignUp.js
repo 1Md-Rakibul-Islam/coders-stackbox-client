@@ -103,6 +103,8 @@ const SingUp = () => {
                 </div>
                 <div className='mx-auto p-3 rounded-md mt-4' style={{border: "2px solid", width: '317px'}}>
                     <button onClick={hangleGithubSingIn}>Register with GitHub</button>
+
+                    
                 </div>
                 </form>
             </div>
