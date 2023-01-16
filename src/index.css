@@ -128,6 +128,16 @@ body {
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+.navglassmorphism {
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(23, 103, 35, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(6px);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.18); */
+  border-bottom: 1px solid;
+  border-image: linear-gradient(270deg, #374df4 0%, #5dd67b 100%);
+  border-image-slice: 1;
+}
 .gradient-03 {
   position: absolute;
   width: 500px;

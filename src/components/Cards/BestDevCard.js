@@ -15,7 +15,7 @@ const BestDevCard = ({ props }) => {
           alt={props.alt}
         />
         <div>
-          <div className={` ${styles.heading2}`}>{props.name}</div>
+          <div className={`${styles.heading3}`}>{props.name}</div>
           <div className={`text-dimGreen`}>{props.title}</div>
         </div>
       </div>
