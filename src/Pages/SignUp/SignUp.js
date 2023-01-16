@@ -1,7 +1,70 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth';
+import React, { useContext, useState } from 'react';
+import { toast } from 'react-hot-toast';
+import { Link, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../context/AuthProvider';
 
 const SingUp = () => {
+    const [error, setError] = useState("");
+  const { providerLogin, githubProviderLogin } = useContext(AuthContext);
+  const { createUser, updateUser } = useContext(AuthContext);
+  const googleAuthProvider = new GoogleAuthProvider();
+  const githubProvider = new GithubAuthProvider();
+  const [createdUserEmail, setCreatedUserEmail] = useState("");
+  const navigate = useNavigate();
+
+  const handleGoogleSignIn = () => {
+    providerLogin(googleAuthProvider)
+      .then((result) => {
+        const user = result.user;
+        toast("User Registered Successfully");
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+  };
+
+  const hangleGithubSingIn = () =>{
+    githubProviderLogin(githubProvider)
+    .then(result =>{
+        const user = result.user;
+        toast("User Registerd Successfully");
+    })
+    .catch(error =>{
+        setError(error.message);
+    })
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(name, email, password);
+
+    const userInfo = {
+      displayName: name,
+    };
+
+    createUser(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        toast("User Created Successfully");
+
+        updateUser(userInfo)
+          .then(() => {
+          })
+          .catch((error) => console.log(error));
+        form.reset();
+        setError("");
+      })
+      .catch((error) => {
+        console.error(error);
+        setError(error.message);
+      });
+  };
     return (
         <div className='grid gap-6 md:grid-cols-1 lg:grid-cols-2 my-11'>
             <div>
@@ -21,7 +84,7 @@ const SingUp = () => {
 
             </div>
             <div className='mt-6'>
-                <form>
+                <form onSubmit={handleSubmit}>
                 <div className='mb-5'>
                 <input type="name" name='name' placeholder="Full Name" className="input input-bordered w-full max-w-xs required:" />
                 </div>
@@ -36,10 +99,10 @@ const SingUp = () => {
                 </div>
                 <div className="divider w-52 mx-auto">OR</div>
                 <div className='mx-auto p-3 rounded-md' style={{border: "2px solid", width: '317px'}}>
-                    <button >Register with Google</button>
+                    <button onClick={handleGoogleSignIn}>Register with Google</button>
                 </div>
                 <div className='mx-auto p-3 rounded-md mt-4' style={{border: "2px solid", width: '317px'}}>
-                    <button>Register with GitHub</button>
+                    <button onClick={hangleGithubSingIn}>Register with GitHub</button>
                 </div>
                 </form>
             </div>
