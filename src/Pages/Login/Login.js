@@ -1,7 +1,62 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import {GithubAuthProvider, GoogleAuthProvider} from 'firebase/auth'
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../context/AuthProvider';
+import { toast } from 'react-hot-toast';
 
 const Login = () => {
+    const [error, setError] = useState('');
+    const {signIn, loader} = useContext(AuthContext);
+    const {providerLogin, githubProviderLogin} = useContext(AuthContext);
+    const {loginUserEmail, setLoginUserEmail} = useState('');
+    const googleAuthProvider = new GoogleAuthProvider();
+    const githubProvider = new GithubAuthProvider();
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/';
+
+    const handleGoogleSignIn = () =>{
+      providerLogin(googleAuthProvider)
+      .then(result =>{
+        const user = result.user;
+        toast('User Login Successfully')
+        navigate(from, {replace: true});
+      })
+      .catch(error => {
+        setError(error.message);
+      })
+    }
+
+    const handleGithubSignin = () =>{
+        githubProviderLogin(githubProvider)
+        .then(result =>{
+            const user = result.user;
+            toast('User Login Successfully');
+            navigate(from, {replace: true});
+        })
+        .catch(error => {
+            setError(error.message);
+        })
+    }
+  
+    const handleSubmit = event =>{
+      event.preventDefault();
+      const form = event.target;
+      const email = form.email.value;
+      const password = form.password.value;
+      signIn(email, password)
+          .then(result =>{
+              const user = result.user;
+              form.reset();
+              setError('');
+              setLoginUserEmail(email);
+          })
+          .catch(error => {
+              console.error(error);
+              setError(error.message);
+          })
+    }
+
     return (
         <div className='grid gap-6 md:grid-cols-1 lg:grid-cols-2 my-11'>
             <div>
@@ -21,7 +76,7 @@ const Login = () => {
 
             </div>
             <div className='mt-6'>
-                <form>
+                <form onSubmit={handleSubmit}>
                 <div>
                 <input type="email" name='email' placeholder="Email Address" className="input input-bordered w-full max-w-xs required:" />
                 </div>
@@ -33,10 +88,10 @@ const Login = () => {
                 </div>
                 <div className="divider w-52 mx-auto">OR</div>
                 <div className='mx-auto p-3 rounded-md' style={{border: "2px solid", width: '317px'}}>
-                    <button >Login with Google</button>
+                    <button onClick={handleGoogleSignIn}>Login with Google</button>
                 </div>
                 <div className='mx-auto p-3 rounded-md mt-4' style={{border: "2px solid", width: '317px'}}>
-                    <button>Login with GitHub</button>
+                    <button onClick={handleGithubSignin}>Login with GitHub</button>
                 </div>
                 </form>
             </div>
