@@ -1,9 +1,16 @@
 import React from "react";
+import ContactUs from "./ContactUs";
+import HelpCategories from "./HelpCategories/HelpCategories";
 
 const CommunitySupport = () => {
   return (
-    <div>
-      <h2 className="text-5xl text-white font-bold">Coming soon...</h2>
+    <div className="mt-12">
+      <h2 className="font-bold text-6xl text-white text-center">
+        How can we{" "}
+        <span className="border-b-2 border-secondary">help you?</span>
+      </h2>
+      <HelpCategories></HelpCategories>
+      <ContactUs></ContactUs>
     </div>
   );
 };

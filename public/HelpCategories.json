@@ -1,0 +1,20 @@
+[
+  {
+    "_id": "63c5661661b27d26c2e668ec",
+    "picture": "https://cdn-icons-png.flaticon.com/512/5199/5199930.png",
+    "title": "Guides",
+    "about": "The purpose of user guides is to provide clear and concise instructions on how to use a product, system, or service."
+  },
+  {
+    "_id": "63c5661661b27d26c2e668ec",
+    "picture": "https://cdn-icons-png.flaticon.com/512/2618/2618540.png",
+    "title": "FAQ",
+    "about": " Frequently Asked Questions is to provide a quick and easy way for users to find answers to common questions "
+  },
+  {
+    "_id": "63c5661661b27d26c2e668ec",
+    "picture": "https://cdn-icons-png.flaticon.com/512/14/14598.png",
+    "title": "Community",
+    "about": "a user community is to create a platform where users of a product, system, or service can share their experiences,"
+  }
+]
