@@ -1,0 +1,70 @@
+import React from 'react';
+
+const AboutUs = () => {
+    return (
+        <div>
+            {/* <h2>About Us</h2>
+            <p>About Our Coders StackBox
+
+            Our online code editor is a powerful and easy-to-use tool for writing and testing code. Built using React and other modern web technologies, it offers a wide range of features for developers of all levels, including syntax highlighting, code completion, and real-time error checking.
+
+            The team behind the code editor is comprised of experienced web developers who are dedicated to creating high-quality tools for the developer community.
+
+            We use the following technologies to build our code editor:
+            - React
+            - JavaScript
+            - Node.js
+
+            To get started using our code editor, check out our documentation and tutorials. If you have any questions or feedback, please don't hesitate to contact us. 
+
+            We believe in open-source and the power of community, that's why our code editor is open-sourced and available on GitHub. You can find the source code and contributing guidelines [here](link to the repository) and the license used [here](link to the license)
+            </p>
+            <p>
+            About Our Code Editor
+
+            Our online code editor is a powerful and easy-to-use tool for writing and testing code. Built using JavaScript, HTML, CSS, and other web technologies, it offers a wide range of features for developers of all levels, including syntax highlighting, code completion, and real-time error checking.
+
+            The team behind the code editor is comprised of experienced web developers who are dedicated to creating high-quality tools for the developer community.
+
+            We use the following technologies to build our code editor:
+            - JavaScript
+            - HTML
+            - CSS
+            - Node.js
+
+            To get started using our code editor, check out our documentation and tutorials. If you have any questions or feedback, please don't hesitate to contact us. 
+
+            We believe in open-source and the power of community, that's why our code editor is open-sourced and available on GitHub. You can find the source code and contributing guidelines [here](link to the repository) and the license used [here](link to the license)
+
+            </p> */}
+
+      <h1>About Our Code Editor</h1>
+      <p>
+        Our online code editor is a powerful and easy-to-use tool for writing and testing code. Built using React and other modern web technologies, it offers a wide range of features for developers of all levels, including syntax highlighting, code completion, and real-time error checking.
+      </p>
+      <p>
+        The team behind the code editor is comprised of experienced web developers who are dedicated to creating high-quality tools for the developer community.
+      </p>
+      <p>
+        We use the following technologies to build our code editor:
+        <ul>
+          <li>React</li>
+          <li>JavaScript</li>
+          <li>Node.js</li>
+        </ul>
+      </p>
+      <p>
+        If you have any questions or feedback, please don't hesitate to contact us at contact@codeeditor.com
+      </p>
+      <p>
+        We believe in open-source and the power of community,
+
+
+contineue
+that's why our code editor is open-sourced and available on GitHub. You can find the source code and contributing guidelines <a href="https://github.com/codeeditor/">here</a> and the license used <a href="https://github.com/codeeditor/LICENSE">here</a>
+</p>
+        </div>
+    );
+};
+
+export default AboutUs;

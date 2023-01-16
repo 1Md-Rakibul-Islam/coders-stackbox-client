@@ -43,7 +43,7 @@ const Navbar = () => {
                 left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in
                 ${open ?'top-20 opacity-100':'top-[-490px]'} `}>
                         <li><Link className="ml-8" to='/'>Home</Link></li>
-                        <li><Link className="ml-8" to='/about'>About Us</Link></li>
+                        <li><Link className="ml-8" to={'/about'}>About Us</Link></li>
                         <li><Link className="ml-8" to='/documentation'>Documentation</Link></li>
                         <li><Link className="ml-8" to='/community'>Community Support</Link></li>
                         <li><Link className="ml-8" to='/login'>Login</Link></li>
