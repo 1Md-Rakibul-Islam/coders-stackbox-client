@@ -19,8 +19,7 @@ const Navbar = () => {
     const [fix, setFix] = useState(false);
   useEffect(() => {
     const fixedHeader = () => {
-      if (window.scrollY >= 80) {
-        console.log('setting')
+      if (window.scrollY >= 390) {
         setFix(true);
       } else {
         setFix(false);
@@ -31,7 +30,7 @@ const Navbar = () => {
   }, []);
 
     return (
-        <div className={` w-full z-10 top-0 left-0 ${fix ? "fixed top-0 z-10 transition-all duration-300 ease-in-out navglassmorphism " : "relative"} `} >
+        <div className={` w-full z-50 top-0 left-0 transition-all duration-300 ease-in-out ${fix ? "fixed top-0 z-10  navglassmorphism " : "relative"} `} >
           <div className="absolute w-[50% inset-0 gradient-01" />
             <div className={`${styles.boxWidth} mx-auto sm:px-10 xs:px-5 px-0 `}>
             <div className="flex justify-between py-4 ">
