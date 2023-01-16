@@ -47,7 +47,7 @@ const Navbar = () => {
                         <li><Link className="lg:ml-8 ml-0" to='/documentation'>Documentation</Link></li>
                         <li><Link className="lg:ml-8 ml-0" to='/community'>Community Support</Link></li>
                         <li><Link className="lg:ml-8 ml-0" to='/login'>Login</Link></li>
-                        <li><Link className="lg:ml-8 ml-0" to="/signup">Sign Up</Link></li>
+                        <li><Link className="lg:ml-8 ml-0" to='/register'>Register</Link></li>
                     </ul>
             </div>
             </div>
