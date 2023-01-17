@@ -4,8 +4,19 @@ import AboutUs from "../../Pages/AboutUs/AboutUs";
 import CommunitySupport from "../../Pages/CommunitySupport/CommunitySupport";
 import Documentation from "../../Pages/Documentation/Documentation";
 import Home from "../../Pages/Home/Home/Home";
+import Services from "../../Pages/Home/Services/Services";
 import Login from "../../Pages/Login/Login";
 import SingUp from "../../Pages/SignUp/SignUp";
+
+
+// CodersStackBox
+// Home
+// About Us
+// Documentation
+// Community Support
+// Login
+// Sign Up
+
 
 const router = createBrowserRouter([
   {
@@ -44,4 +55,4 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default router;
+export default router

@@ -55,7 +55,7 @@ const AboutUs = () => {
             <p>
                 If you have any questions or feedback, please don't hesitate to contact us at coders.stackbox@gmail.com
                 <br />
-                We believe in open-source and the power of community,contineue that's why our code editor is open-sourced and available on GitHub. You can find the source code and contributing guidelines <a href="">here</a> and the license used <a href="">here</a>
+                We believe in open-source and the power of community,contineue that's why our code editor is open-sourced and available on GitHub. You can find the source code and contributing guidelines here and the license used here.
             </p>
         </div>
     );
