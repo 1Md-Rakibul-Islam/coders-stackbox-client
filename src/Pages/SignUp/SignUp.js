@@ -3,6 +3,7 @@ import React, { useContext, useState } from 'react';
 import { toast } from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider';
+import { layout } from '../../style';
 
 const SingUp = () => {
   const [error, setError] = useState("");
@@ -66,8 +67,8 @@ const SingUp = () => {
       });
   };
   return (
-    <div className='grid gap-9 md:grid-cols-1 lg:grid-cols-2 my-11'>
-      <div>
+    <div className='grid gap-9 md:grid-cols-1 lg:grid-cols-2'>
+      <div className={`${layout.sectionCol}`}>
         <img className='extra-img' src="https://i.ibb.co/S3ScgR8/118046-lf20-oahmox5rjson.gif" alt="" />
       </div>
       <div className='extra'>
