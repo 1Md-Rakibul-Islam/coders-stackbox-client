@@ -19,8 +19,7 @@ const Navbar = () => {
     const [fix, setFix] = useState(false);
   useEffect(() => {
     const fixedHeader = () => {
-      if (window.scrollY >= 80) {
-        console.log('setting')
+      if (window.scrollY >= 390) {
         setFix(true);
       } else {
         setFix(false);
@@ -31,7 +30,7 @@ const Navbar = () => {
   }, []);
 
     return (
-        <div className={` w-full z-10 top-0 left-0 ${fix ? "fixed top-0 z-10 transition-all duration-300 ease-in-out navglassmorphism " : "relative"} `} >
+        <div className={` w-full z-50 top-0 left-0 transition-all duration-300 ease-in-out ${fix ? "fixed top-0 z-10  navglassmorphism " : "relative"} `} >
           <div className="absolute w-[50% inset-0 gradient-01" />
             <div className={`${styles.boxWidth} mx-auto sm:px-10 xs:px-5 px-0 `}>
             <div className="flex justify-between py-4 ">
@@ -48,7 +47,7 @@ const Navbar = () => {
                 </div>
                 <ul className={`md:flex md:items-center md:pb-0
                 pb-12 absolute md:static text-white z-10 
-                w-full md:w-auto transition-all duration-500 ease-in
+                left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in
                 ${open ?'top-20 opacity-100 navglassmorphism p-5 ':'top-[-490px]'} `}>
                         <li><Link className="lg:ml-8 ml-0" to='/'>Home</Link></li>
                         <li><Link className="lg:ml-8 ml-0" to='/about'>About Us</Link></li>

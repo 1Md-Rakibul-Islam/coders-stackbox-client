@@ -9,8 +9,8 @@ const Collaboration = () => {
       <div className={`${layout.sectionInfo} text-center`}>
         <div className={`${styles.heading2} `}>Collaborations</div>
         <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3 mx-auto my-5">
-          {collabs.map((collab) => (
-            <CollabsCard key={collab.id} props={collab}></CollabsCard>
+          {collabs.map((collab, i) => (
+            <CollabsCard key={i} props={collab}></CollabsCard>
           ))}
         </div>
       </div>
