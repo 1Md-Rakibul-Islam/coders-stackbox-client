@@ -67,11 +67,11 @@ const SingUp = () => {
       });
   };
   return (
-    <div className='grid gap-9 md:grid-cols-1 lg:grid-cols-2'>
+    <div className='grid gap-4 md:grid-cols-1 lg:grid-cols-2'>
       <div className={`${layout.sectionCol}`}>
-        <img className='extra-img' src="https://i.ibb.co/S3ScgR8/118046-lf20-oahmox5rjson.gif" alt="" />
+        <img className='extra-img w-4/5' src="https://i.ibb.co/S3ScgR8/118046-lf20-oahmox5rjson.gif" alt="" />
       </div>
-      <div className='extra'>
+      <div className='extra p-2'>
         <div className='text-white text-center xl:mt-16'>
           <div className='flex justify-around w-56 mx-auto'>
             <div>
