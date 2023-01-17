@@ -3,6 +3,7 @@ import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider';
 import { toast } from 'react-hot-toast';
+import { layout } from '../../style';
 
 const Login = () => {
     const [error, setError] = useState('');
@@ -58,8 +59,8 @@ const Login = () => {
     }
 
     return (
-        <div className='grid gap-9 md:grid-cols-1 lg:grid-cols-2 my-11'>
-            <div>
+        <div className='grid gap-9 md:grid-cols-1 lg:grid-cols-2'>
+            <div  className={`${layout.sectionCol}`}>
                 <img className='extra-img' src="https://i.ibb.co/y0x4bqb/107385-login.gif" alt="" />
             </div>
             <div className='extra'>
