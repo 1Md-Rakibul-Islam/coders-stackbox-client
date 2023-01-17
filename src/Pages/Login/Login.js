@@ -58,11 +58,11 @@ const Login = () => {
     }
 
     return (
-        <div className='grid gap-6 md:grid-cols-1 lg:grid-cols-2 my-11'>
+        <div className='grid gap-9 md:grid-cols-1 lg:grid-cols-2 my-11'>
             <div>
-                <img className='rounded-2xl' src="https://i.ibb.co/y0x4bqb/107385-login.gif" alt="" />
+                <img className='extra-img' src="https://i.ibb.co/y0x4bqb/107385-login.gif" alt="" />
             </div>
-            <div>
+            <div className='extra'>
                 <div className='text-white text-center xl:mt-20'>
                     <div className='flex justify-around w-56 mx-auto'>
                         <div>
@@ -87,10 +87,10 @@ const Login = () => {
                                 <button className='bg-black px-32 py-3 text-white rounded-md' type='submit'>Login</button>
                             </div>
                             <div className="divider w-52 mx-auto">OR</div>
-                            <div className='mx-auto p-3 rounded-md' style={{ border: "2px solid", width: '317px' }}>
+                            <div className='mx-auto p-3 rounded-md bg-gradient-to-r from-accent to-secondary' style={{width: '317px' }}>
                                 <button onClick={handleGoogleSignIn}>Login with Google</button>
                             </div>
-                            <div className='mx-auto p-3 rounded-md mt-4' style={{ border: "2px solid", width: '317px' }}>
+                            <div className='mx-auto p-3 rounded-md mt-4 bg-gradient-to-r from-accent to-secondary' style={{width: '317px' }}>
                                 <button onClick={handleGithubSignin}>Login with GitHub</button>
                             </div>
                         </form>
