@@ -9,16 +9,16 @@ const OurTeams = ({ card }) => {
   const { id, image, designation, name, github } = card;
   return (
     <div>
-      <div class="rounded-lg shadow-lg pt-8 text-white">
+      <div className="rounded-lg shadow-lg pt-8 text-white">
         <div className="t-5 bg-white mx-12 rounded-xl">
           <img
-            class="w-full mx-auto align-center rounded-full p-5 h-52 w-52"
+            className="w-full mx-auto align-center rounded-full p-5 h-52 w-52"
             src={image}
             alt=""
           />
         </div>
-        <div class="p-6 text-center">
-          <h1 class="text-3xl font-medium mb-2 name">{name}</h1>
+        <div className="p-6 text-center">
+          <h1 className="text-3xl font-medium mb-2 name">{name}</h1>
           <h5 className="designation">{designation}</h5>
           <div>
             <ul className="flex justify-center mt-5 text-3xl">

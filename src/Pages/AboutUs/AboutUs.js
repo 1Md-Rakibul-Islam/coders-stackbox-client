@@ -44,7 +44,6 @@ const AboutUs = () => {
 
             <p>One of the first major changes we made was to add syntax highlighting and code completion, which made it easier for users to write and understand their code. We also added a built-in code execution feature, which allowed users to test their code without having to leave the editor. As we continued to develop the editor, we added more advanced features such as version control, debugging tools, and collaboration capabilities. We also made a number of improvements to the user interface to make it more intuitive and user-friendly. Over time, our online code editor has grown to become a powerful and versatile tool that is used by thousands of developers around the world. We are constantly working to improve the editor and add new features to meet the evolving needs of our users.</p>
 
-
                 <h2 className='mt-2'>We use the following technologies to build our code editor:</h2>
                 <ul className='ml-5 my-2'>
                     <li>React</li>
