@@ -1,7 +1,10 @@
 import React from 'react';
 import { FaGit, FaGithub, FaLinkedin, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import CountUp from 'react-countup/build';
 
 const AboutUs = () => {
+
+    
     return (
         <div className='text-white text-justify'>
             <div className='flex justify-between'>
@@ -23,17 +26,17 @@ const AboutUs = () => {
             </p>
 
             <div className='grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center my-10 mx-5'>
-                <div className=' p-3 rounded-md '>
-                    <h2 className='text-5xl'>58+</h2>
-                    <p className='text-2xl font-semibold text-secondary'>Developers</p>
+                <div className=' p-3 rounded-md border-2 border-blue-500 shadow-2xl shadow-blue-400'>
+                    <CountUp className='text-5xl' start={0} end={58} duration={2.75} separator=" " suffix=" +"></CountUp>
+                    <p className='text-2xl font-semibold text-secondary'>Total Developers</p>
                 </div>
-                <div className=' p-3 rounded-md '>
-                    <h2 className='text-5xl'>100+</h2>
-                    <p className='text-2xl font-semibold text-secondary'>Projects</p>
+                <div className=' p-3 rounded-md border-2 border-blue-500 shadow-2xl shadow-blue-400'>
+                    <CountUp className='text-5xl' start={0} end={100} duration={2.75} separator=" " suffix=" +"></CountUp>
+                    <p className='text-2xl font-semibold text-secondary'>Complete Projects</p>
                 </div>
-                <div className=' p-3 rounded-md '>
-                    <h2 className='text-5xl'>99%</h2>
-                    <p className='text-2xl font-semibold text-secondary'>Userfrendly</p>
+                <div className=' p-3 rounded-md border-2 border-blue-500 shadow-2xl shadow-blue-400'>
+                    <CountUp className='text-5xl' start={0} end={99} duration={2.75} separator=" " suffix=" %"></CountUp>
+                    <p className='text-2xl font-semibold text-secondary'>User-Friendly</p>
                 </div>
             </div>
 
