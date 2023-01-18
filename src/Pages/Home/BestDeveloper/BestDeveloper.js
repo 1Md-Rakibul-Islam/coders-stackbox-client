@@ -6,7 +6,7 @@ import styles, { layout } from "../../../style";
 const BestDeveloper = () => {
   return (
     <div className={`${layout.sectionCol}`}>
-      <div className={`${layout.sectionInfo} text-center`}>
+      <div className={`${layout.sectionInfo} text-center z-10`}>
         <div className={`${styles.heading2} `}>Best Developers</div>
         <div className={`${styles.paragraph} `}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
