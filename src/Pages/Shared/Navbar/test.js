@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import FAQ from "./subsections/FAQ/FAQ";
 
 const CommunitySupport = () => {
