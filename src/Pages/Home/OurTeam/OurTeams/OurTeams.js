@@ -10,7 +10,7 @@ const OurTeams = ({ card }) => {
   return (
     <div>
       <div className="rounded-lg shadow-lg pt-8 text-white">
-        <div className="t-5 bg-white mx-12 rounded-xl">
+        <div className="bg-white mx-12 rounded-xl">
           <img
             className="w-full mx-auto align-center rounded-full p-5 h-52 w-52"
             src={image}

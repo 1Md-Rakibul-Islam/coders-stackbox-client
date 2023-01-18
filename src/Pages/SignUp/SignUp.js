@@ -3,6 +3,7 @@ import React, { useContext, useState } from 'react';
 import { toast } from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider';
+import { layout } from '../../style';
 
 const SingUp = () => {
   const [error, setError] = useState("");
@@ -66,11 +67,11 @@ const SingUp = () => {
       });
   };
   return (
-    <div className='grid gap-6 md:grid-cols-1 lg:grid-cols-2 my-11'>
-      <div>
-        <img className='rounded-2xl' src="https://i.ibb.co/S3ScgR8/118046-lf20-oahmox5rjson.gif" alt="" />
+    <div className='grid gap-4 md:grid-cols-1 lg:grid-cols-2'>
+      <div className={`${layout.sectionCol}`}>
+        <img className='extra-img w-4/5' src="https://i.ibb.co/S3ScgR8/118046-lf20-oahmox5rjson.gif" alt="" />
       </div>
-      <div>
+      <div className='extra p-2'>
         <div className='text-white text-center xl:mt-16'>
           <div className='flex justify-around w-56 mx-auto'>
             <div>
@@ -82,34 +83,34 @@ const SingUp = () => {
               </Link>
             </div>
 
-          </div>
-          <div className='mt-6'>
-            <form onSubmit={handleSubmit}>
-              <div className='mb-5'>
-                <input type="name" name='name' placeholder="Full Name" className="input input-bordered w-full max-w-xs text-black" required />
-              </div>
-              <div>
-                <input type="email" name='email' placeholder="Email Address" className="input input-bordered w-full max-w-xs text-black" required />
-              </div>
-              <div className='my-5'>
-                <input type="password" name='password' placeholder="Password" className="input input-bordered w-full max-w-xs text-black" required />
-              </div>
-              <div>
-                <button className='bg-black px-32 py-3 text-white rounded-md' type='submit'>Register</button>
-              </div>
-              <div className="divider w-52 mx-auto">OR</div>
-              <div className='mx-auto p-3 rounded-md' style={{ border: "2px solid", width: '317px' }}>
-                <button onClick={handleGoogleSignIn}>Register with Google</button>
-              </div>
-              <div className='mx-auto p-3 rounded-md mt-4' style={{ border: "2px solid", width: '317px' }}>
-                <button onClick={hangleGithubSingIn}>Register with GitHub</button>
-              </div>
-            </form>
-          </div>
+            </div>
+            <div className='mt-6'>
+                <form onSubmit={handleSubmit}>
+                <div className='mb-5'>
+                <input type="name" name='name' placeholder="Full Name" className="input input-bordered w-full max-w-xs required:" />
+                </div>
+                <div>
+                <input type="email" name='email' placeholder="Email Address" className="input input-bordered w-full max-w-xs required:" />
+                </div>
+                <div className='my-5'>
+                <input type="password" name='password' placeholder="Password" className="input input-bordered w-full max-w-xs required:" />
+                </div>
+                <div>
+                    <button className='bg-black px-32 py-3 text-white rounded-md' type='submit'>Register</button>
+                </div>
+                <div className="divider w-52 mx-auto">OR</div>
+                <div className='mx-auto p-3 rounded-md bg-gradient-to-r from-accent to-secondary' style={{width: '317px'}}>
+                    <button onClick={handleGoogleSignIn}>Register with Google</button>
+                </div>
+                <div className='mx-auto p-3 rounded-md mt-4 bg-gradient-to-r from-accent to-secondary' style={{width: '317px'}}>
+                    <button onClick={hangleGithubSingIn}>Register with GitHub</button>
+                </div>
+                </form>
+            </div>
+            </div>
+            </div>            
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default SingUp;

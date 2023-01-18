@@ -47,7 +47,7 @@ const Navbar = () => {
                 </div>
                 <ul className={`md:flex md:items-center md:pb-0
                 pb-12 absolute md:static text-white z-10 
-                left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in
+                w-full md:w-auto transition-all duration-500 ease-in
                 ${open ?'top-20 opacity-100 navglassmorphism p-5 ':'top-[-490px]'} `}>
                         <li><Link className="lg:ml-8 ml-0" to='/'>Home</Link></li>
                         <li><Link className="lg:ml-8 ml-0" to='/about'>About Us</Link></li>

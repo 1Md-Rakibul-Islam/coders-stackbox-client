@@ -16,3 +16,15 @@
 .authentication-title{
     font-family: 'EB Garamond', serif;
 }
+
+.extra{
+    border: 2px solid rgb(84, 211, 110);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.extra-img{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+

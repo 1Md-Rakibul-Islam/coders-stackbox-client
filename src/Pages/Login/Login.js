@@ -3,6 +3,7 @@ import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider';
 import { toast } from 'react-hot-toast';
+import { layout } from '../../style';
 
 const Login = () => {
     const [error, setError] = useState('');
@@ -58,11 +59,11 @@ const Login = () => {
     }
 
     return (
-        <div className='grid gap-6 md:grid-cols-1 lg:grid-cols-2 my-11'>
-            <div>
-                <img className='rounded-2xl' src="https://i.ibb.co/y0x4bqb/107385-login.gif" alt="" />
+        <div className='grid gap-4 md:grid-cols-1 lg:grid-cols-2'>
+            <div  className={`${layout.sectionCol}`}>
+                <img className='extra-img w-4/5' src="https://i.ibb.co/y0x4bqb/107385-login.gif" alt="" />
             </div>
-            <div>
+            <div className='extra p-2'>
                 <div className='text-white text-center xl:mt-20'>
                     <div className='flex justify-around w-56 mx-auto'>
                         <div>
@@ -87,10 +88,10 @@ const Login = () => {
                                 <button className='bg-black px-32 py-3 text-white rounded-md' type='submit'>Login</button>
                             </div>
                             <div className="divider w-52 mx-auto">OR</div>
-                            <div className='mx-auto p-3 rounded-md' style={{ border: "2px solid", width: '317px' }}>
+                            <div className='mx-auto p-3 rounded-md bg-gradient-to-r from-accent to-secondary' style={{width: '317px' }}>
                                 <button onClick={handleGoogleSignIn}>Login with Google</button>
                             </div>
-                            <div className='mx-auto p-3 rounded-md mt-4' style={{ border: "2px solid", width: '317px' }}>
+                            <div className='mx-auto p-3 rounded-md mt-4 bg-gradient-to-r from-accent to-secondary' style={{width: '317px' }}>
                                 <button onClick={handleGithubSignin}>Login with GitHub</button>
                             </div>
                         </form>
