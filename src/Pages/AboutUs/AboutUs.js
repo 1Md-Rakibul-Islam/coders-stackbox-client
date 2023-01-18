@@ -4,10 +4,9 @@ import CountUp from 'react-countup/build';
 
 const AboutUs = () => {
 
-    
     return (
         <div className='text-white text-justify'>
-            <div className='flex justify-between'>
+            <div className='flex justify-between items-center'>
                 <h2 className='text-3xl mt-10 font-bold text-secondary'>About Us</h2>
                 <div className='flex gap-2 items-center text-xl my-10'>
                     <p>Follow us on </p>
