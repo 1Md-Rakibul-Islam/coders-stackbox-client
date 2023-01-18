@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import heroImage from "../../../assets/heroImage.gif";
 import Button from "../../../components/Buttons/Button";
 
@@ -10,7 +11,7 @@ const Hero = () => {
         <div className="">
           <h1 className="text-5xl font-bold mr-5 font-italic">C<span className='text-secondary text-6xl'>o</span>ders Stack<span className='text-secondary'>Box</span> is the best place to build, test, and discover front-end code.</h1>
           <p className="my-10 text-justify">Build your Fron-End Web Application. Get work done quicker by building out entire projects or isolating code to test features and animations. Want to keep it all  under wraps? Become a part of the most active front-end community in the world by sharing work. Presenting at a conference? Show your code directly in the browser with Presentation Mode.</p>
-          <Button>Start Coding <FaArrowRight className='ml-2'></FaArrowRight> </Button>
+          <Link to="/code-editor"><Button>Start Coding <FaArrowRight className='ml-2'></FaArrowRight> </Button></Link>
 
         </div>
         <div className="overflow">
