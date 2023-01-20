@@ -1,0 +1,62 @@
+[
+    {
+        "categoryId": "63c8fda1c07f06313beca801",
+        "categoryName": "E-Commerce",
+        "OnnerName": "Rakibul Islam",
+        "OnnerEmail": "rakibul9bd@gmail.com",
+        "projectTitle": "Sokher Furniture",
+        "projectImage": "",
+        "projectDescription": "Our website is the perfect destination for those looking to buy or sell vintage and antique furniture. We specialize in unique and one-of-a-kind pieces that have a story to tell. From elegant Victorian-era antiques to mid-century modern classics, our selection of furniture is sure to impress. Our website is easy to navigate, with clear and detailed photographs of each item, so you can find exactly what you're looking for. We also provide detailed descriptions and histories of each piece to help you make informed purchasing decisions. Whether you're a collector, an interior designer, or just looking for a special piece to add to your home, our website has something for everyone. With our website, buying and selling vintage and antique furniture has never been easier!",
+        "createdDate": "19-02-2023"
+    },
+    {
+        "categoryId": "63c8fda1c07f06313beca801",
+        "categoryName": "E-Commerce",
+        "OnnerName": "Rakibul Islam",
+        "OnnerEmail": "rakibul9bd@gmail.com",
+        "projectTitle": "Daraz",
+        "projectImage": "",
+        "projectDescription": "Daraz is an online shopping platform that offers a wide range of products from clothing to electronics, home and living, beauty, health and more. With Daraz, you can shop from the comfort of your own home and have your purchases delivered right to your doorstep. Our website offers a user-friendly interface and easy navigation, making it simple for you to find exactly what you're looking for. We also provide a variety of payment options and secure checkout to ensure a safe and convenient shopping experience. Additionally, we offer the best deals and discounts to our customers and provide a platform for sellers to sell their products. Join us today and enjoy the convenience and variety of shopping on Daraz.",
+        "createdDate": "08-02-2023"
+    },
+    {
+        "categoryId": "63c8fda1c07f06313beca802",
+        "categoryName": "Educational",
+        "OnnerName": "Bizoy Khan",
+        "OnnerEmail": "bizoy@gmail.com",
+        "projectTitle": "Bright Education",
+        "projectImage": "",
+        "projectDescription": "Is is a educational web site. Our educational website offers a comprehensive learning experience for students of all ages. With a wide range of courses and resources, we aim to make education accessible and engaging for everyone. Our interactive tutorials and quizzes allow students to learn at their own pace, while our expert instructors provide guidance and support along the way. Whether you're looking to improve your grades, learn a new skill, or explore a new hobby, our website has something for everyone. Join us today and start your journey to success!",
+        "createdDate": "25-01-2023"
+    },
+    {
+        "categoryId": "63c8fda1c07f06313beca803",
+        "categoryName": "News",
+        "OnnerName": "Rasel Islam",
+        "OnnerEmail": "rasel@gmail.com",
+        "projectTitle": "Dragon News",
+        "projectImage": "",
+        "projectDescription": "Dragon News portal, your one-stop destination for the latest breaking news and in-depth coverage of current events. Our website is updated 24/7 with the latest information from around the world, covering a wide range of topics including politics, business, technology, sports, entertainment and more. Our team of experienced journalists work tirelessly to bring you unbiased and accurate reporting, providing you with the information you need to stay informed and up-to-date. We also offer a range of multimedia content including videos, podcasts, and interactive graphics to enhance your news consumption experience. Our user-friendly interface and easy navigation make it simple for you to find the stories that matter most to you. Get your daily dose of news with us.",
+        "createdDate": "05-02-2023"
+    },
+    {
+        "categoryId": "63c8fda1c07f06313beca805",
+        "categoryName": "Business",
+        "OnnerName": "Sohel Rana",
+        "OnnerEmail": "sohel@gmail.com",
+        "projectTitle": "Rupali Bank LTD",
+        "projectImage": "",
+        "projectDescription": "Welcome to the official website of Rupali Bank Ltd. We are one of the leading commercial banks in the country, providing a wide range of banking and financial services to individuals and businesses. Our website offers easy access to all of our products and services, including personal and business banking, online banking, credit cards, loans, and more. With our online banking services, you can manage your account and conduct transactions from the comfort of your own home. Our user-friendly interface and easy navigation make it simple for you to find the information you need and complete your transactions quickly and securely. Additionally, we offer a variety of financial tools and resources, such as calculators and educational articles, to help you make informed financial decisions. We are committed to providing our customers with the highest level of service and security, and our team of experienced professionals is always available to assist you with your banking needs. Whether you're looking to open a new account, apply for a loan, or simply want to learn more about our services, we invite you to explore our website and discover the many ways we can help you achieve your financial goals.",
+        "createdDate": "19-02-2023"
+    },
+    {
+        "categoryId": "63c8fda1c07f06313beca804",
+        "categoryName": "Portfolio",
+        "OnnerName": "Enamul Khan",
+        "OnnerEmail": "enamul@gmail.com",
+        "projectTitle": "Enamul Portfolio",
+        "projectImage": "",
+        "projectDescription": "Enamul's portfolio website, a showcase of my professional work and accomplishments. As a highly skilled and experienced professional, I have a diverse range of skills and expertise in areas such as web development, graphic design, and digital marketing.On this website, you will find a curated selection of my work, including web development projects, graphic design pieces, and digital marketing campaigns. Each project includes detailed information about my role, the technologies used, and the results achieved. I am always striving to improve my skills and stay up-to-date with the latest industry trends. I am a dedicated and hardworking professional, with a strong passion for creating visually stunning and user-friendly designs. Whether you're looking to hire me for your next project, or simply want to see some of my work, I invite you to explore my portfolio website and get in touch with me if you have any questions.",
+        "createdDate": "15-02-2023"
+    }
+]
